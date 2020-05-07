@@ -1,7 +1,7 @@
 # Project 3 Repo
 <h2> 281 Project 3 Learning Outcomes </h2>
 [website](https://github.com/cieranguyen/cieranguyen.github.io.git)
-* A web API or Application Programming Interface is an API
+* A web API or _Application Programming Interface_ is an API
 accessed using the HTTP protocol. Web APIs often deliver data
 formatted as JSON.
 * A web API can be accessed programmatically using JavaScript.
