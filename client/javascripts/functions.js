@@ -50,34 +50,29 @@ let findAllbitBatBotOrNots3 = (arr) => {
   let newArr = [];
   let elem;
 for (let elem of arr) {
-  elem = `${arr[i]} : ${bitBatBotOrNot(arr[i])}`;
-  newArr.push(elem);
-}
-return newArr;
-};
-//closest i've got
-let findAllbitBatBotOrNots3 = (arr) => {
-  let newArr = [];
-  let elem;
-for (let elem of arr) {
   elem = `${elem} : ${bitBatBotOrNot(arr)}`;
   newArr.push(elem);
 }
 return newArr;
 }
 
-
+//f.) foreach method
 let findAllbitBatBotOrNots4 = (arr) => {
-  //your code goes here
-  //use forEach method
+let newArr = [];
+let elem;
+arr.forEach(function(elem) {
+  elem = `${elem} : ${bitBatBotOrNot(arr)}`;
+  newArr.push(elem);
+})
+return newArr;
 }
-
-//test the functions
-
-findAllbitBatBotOrNots1(arrOf1To100)
-
-findAllbitBatBotOrNots2(arrOf1To100)
-
-findAllbitBatBotOrNots3(arrOf1To100)
-
-findAllbitBatBotOrNots4(arrOf1To100)
+//X.C for..in loop
+let findAllbitBatBotOrNotsXC = (arr) => {
+  let newArr = [];
+  let elem;
+  for (let elem in arr) {
+    elem = `${elem} : ${bitBatBotOrNot(arr)}`;
+    newArr.push(elem);
+  }
+  return newArr;
+}
